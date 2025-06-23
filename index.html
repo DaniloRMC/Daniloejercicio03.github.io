@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Imagen</title>
+    <style>
+        img {
+            width: 300px;
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <img id="imagen" src="WIN_20210214_19_04_01_Pro.jpg" alt="Imagen" onmouseover="cambiarImagen('Imagen')" onmouseout="cambiarImagen('imagen')">
+    
+    <script>
+        function cambiarImagen(src) {
+            document.getElementById('imagen').src = src;
+        }
+    </script>
+</body>
+</html>
